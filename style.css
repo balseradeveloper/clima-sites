@@ -1,0 +1,146 @@
+/* Mobile First (por defecto) */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  box-shadow: rgb(47, 48, 48) 0px 0px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+}
+
+.city {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tiempo {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.enlaceMaps {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.place-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 250px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.place-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  align-self: flex-start;
+}
+
+.place-card:hover {
+  transform: scale(1.02);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Tablet (>= 600px) */
+@media (min-width: 600px) {
+  .mb-4 {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+  }
+  .city {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .tiempo {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .weather-icon {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+  }
+  .place-card {
+    min-height: 350px;
+    padding: 15px;
+  }
+  .place-card img {
+    height: 240px;
+  }
+}
+
+/* Desktop (>= 1024px) */
+@media (min-width: 1024px) {
+  .mb-4 {
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+  .city {
+    font-size: 2.5rem;
+  }
+  .tiempo {
+    font-size: 1.5rem;
+  }
+  .weather-icon {
+    width: 150px;
+    height: 150px;
+  }
+  .place-card {
+    min-height: 420px;
+    padding: 20px;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+  }
+  .place-card img {
+    height: 300px;
+    width: 450px;
+    max-width: 100%;
+  }
+}
