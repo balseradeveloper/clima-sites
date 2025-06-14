@@ -84,7 +84,7 @@ function getSuggestions(city, weatherCondition) {
               <h5>${name}</h5>
               <p>${address}</p>
               <img src="${image}" alt="${name}" class="img-fluid">
-              <p><a href="${mapsUrl}" target="_blank" rel="noopener">Ver en Google Maps</a></p>
+              <p><a href="${mapsUrl}" target="_blank" rel="noopener" class="enlaceMaps">Ver en Google Maps</a></p>
             </div>
           </div>
         `;
