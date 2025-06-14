@@ -53,6 +53,14 @@ body {
   transition: background-color 0.3s ease;
 }
 
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  align-items: stretch;
+}
+
 .place-card {
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -107,11 +115,12 @@ body {
     margin-right: 10px;
   }
   .place-card {
-    min-height: 350px;
+    height: 500px;
     padding: 15px;
   }
   .place-card img {
-    height: 240px;
+    height: 250px;
+    flex-shrink: 0;
   }
 }
 
@@ -132,15 +141,15 @@ body {
     height: 150px;
   }
   .place-card {
-    min-height: 420px;
+    height: 500px;
     padding: 20px;
     flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto 2rem auto;
+    max-width: none;
+    margin: 0 auto;
   }
   .place-card img {
-    height: 300px;
-    width: 450px;
-    max-width: 100%;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
   }
 }
